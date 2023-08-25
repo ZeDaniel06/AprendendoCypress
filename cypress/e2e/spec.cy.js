@@ -10,7 +10,7 @@
 describe('Google test', () =>{
   it('Pesquisar',()=>{
     cy.visit("https://www.google.com")
-    cy.get("#APjFqb").type("Noticias",{delay:100})
+    cy.get("#APjFqb").type("Noticias{enter}",{delay:100})
     
   })
 })
