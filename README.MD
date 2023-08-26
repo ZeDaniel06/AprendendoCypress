@@ -1,0 +1,1 @@
+Este repositório tem como objetivo registrar meus estudos na área de testes de software, que estou iniciando agora nesse semestre, a princípio utilizando a ferramenta do Cypress.io
