@@ -8,3 +8,5 @@ Conceitos:
 
 - Código síncrono + assíncrono:
     É possível misturar código síncrono (Cypress.$) com o assíncrono do Cypress. A diferença é que o assíncrono aguarda antes de executar, já o síncrono executa imediatamente. Por exemplo, se eu mando um `cy.visit('url')` e embaixo um `cy.get('seletor')`, o código  será funcional, pois o cy vai aguardar a execução anterior antes de selecionar. Mas ao invés de um `cy.get()` pode-se utilizar `let var = Cypress.$('seletor')` , este será executado imediatamente, e portanto podendo dar falha, já que vai tentar selecionar um elemento antes do `cy.visit()` ser concluído. Por isso utilizamos o `then()`, colocando ele após o `cy.visit()` forçamos o `Cypress.$` aguardar a finalização dele para poder selecionar o elemento.
+
+Nota: Na disciplina de Engenharia da Qualidade, que estou fazendo na faculdade, foi criado um github classroom, e agora migrei meus estudos de testes para lá, o repositório pode ser encontrado no meu perfil, algo como `uepb-tees` e meu nick `ZeDaniel06`.
